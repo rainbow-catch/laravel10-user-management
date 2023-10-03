@@ -52,6 +52,12 @@
                     {{ __('Log in') }}
                 </x-primary-button>
             </div>
+            <div class="flex items-center justify-center mt-4 align-middle ">
+                <a href="{{ route('auth.google') }}">
+                    <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png">
+                </a>
+            </div>
+            <x-input-error :messages="$errors->get('google')" class="mt-2 text-center" />
         </form>
     </x-auth-card>
 </x-guest-layout>

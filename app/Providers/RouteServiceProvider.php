@@ -18,6 +18,7 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     public const HOME = '/dashboard';
+    public const _2fa = '/auth/google';
 
     /**
      * The controller namespace for the application.
